@@ -1,0 +1,51 @@
+{
+  "name": "haxwin",
+  "version": "1.0.0",
+  "description": "A minimal browser for html version of HaxBall",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon -x \"npm start -- --dev --nosplash\" ",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "HaxBall"
+  ],
+  "author": "Oskari Pöntinen",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.13.4"
+  },
+  "build": {
+    "appId": "tk.salamini.${name}",
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "tar.bz2",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}

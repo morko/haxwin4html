@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+}
+
+#haxwin-client-navigation {
+  display: flex;
+}
+
+#haxwin-client-navigation .navigation-textbox {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+  width: 360px;
+}
+
+#haxwin-client-navigation .navigation-button {
+  background-color: #244967;
+  color: white;
+  padding: 0px 15px;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+}
+#haxwin-client-navigation .navigation-button:hover {
+  background-color: #2f5e85;
+}

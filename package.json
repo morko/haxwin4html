@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "electron": "^2.0.0",
-    "electron-builder": "^20.13.4"
+    "electron-builder": "^20.44.4"
   },
   "build": {
     "appId": "tk.salamini.${name}",
